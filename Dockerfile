@@ -26,4 +26,4 @@ EXPOSE 8000
 ENV PATH="/env/bin:$PATH"
 
 # Comando para ejecutar la aplicación con Uvicorn
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["sh", "-c", "uvicorn my_app:app --host 0.0.0.0 --port 8000 & streamlit run app_streamlit.py --server.port 8501"]
