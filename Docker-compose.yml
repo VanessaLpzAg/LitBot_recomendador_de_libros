@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  litbot:
+    build: .
+    container_name: litbot
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    depends_on:
+      - mysql
+    networks:
+      - litbot_network
+
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${password_db}
+      MYSQL_DATABASE: recomendador_libros
+    ports:
+      - "3306:3306"
+    networks:
+      - litbot_network
+
+networks:
+  litbot_network:
+    driver: bridge
