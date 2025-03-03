@@ -1,6 +1,6 @@
 # LitBot - Recomendador de Libros con IA 📚🤖
 
-![LitBot Image](./img/Icono LitBot2.jpg)
+![LitBot Image](./img/Icono_LitBot3.png)
 
 LitBot es un recomendador de libros basado en inteligencia artificial (IA) que interactúa con los usuarios mediante preguntas sobre sus preferencias literarias. Utiliza el modelo de lenguaje de **Cohere** para generar recomendaciones personalizadas de libros y guarda el historial de consultas en una base de datos MySQL para ofrecer un seguimiento más preciso de las recomendaciones.
 
